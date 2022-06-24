@@ -1,0 +1,372 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Anek Latin', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+}
+
+.header img {
+    max-width: 190px;
+}
+
+.header .header-menu li {
+    display: inline;
+    padding: 10px;
+    margin: 4px 6px 4px 30px;
+    font-size: 22px;
+    color: rgb(120, 117, 117);
+    transition: all 0.4s;
+}
+
+.header .header-menu a {
+    color: rgb(109, 108, 108);
+    text-decoration: none;
+}
+
+.header .header-menu li:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.header .menu-reg li {
+    display: inline;
+    padding: 12px;
+    margin: 4px 6px 4px 16px;
+    font-size: 23px;
+    color: rgb(120, 117, 117);
+    transition: all 0.4s;
+}
+
+.header .menu-reg a {
+    color: rgb(109, 108, 108);
+    text-decoration: none;
+} 
+
+.header .menu-reg li:hover {
+    background-color: rgb(177, 177, 177);
+}
+
+.header .menu-reg i {
+    color: rgb(109, 108, 108);
+}
+
+.banner {
+    border-top: 5px solid rgb(149, 148, 148);
+    border-bottom: 5px solid rgb(149, 148, 148);
+    width: 100%;
+    height: 500px;
+    background: url(./images/banner.webp) no-repeat;
+    background-size: cover;
+}
+
+.section-categories {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    height: 150px;
+}
+
+.section-select select {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 38px;
+    border: 2px solid rgb(235, 234, 234);
+    border-radius: 13px 13px 13px 13px;
+    outline: none;
+    color: rgb(109, 108, 108);
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.4;
+}
+
+.section-select select:hover {
+    opacity: 0.6;
+}
+
+.section-menu {
+    margin-top: 50px;
+}
+
+.section-menu li {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+    border: 2px solid rgb(235, 234, 234);
+    border-radius: 13px 13px 13px 13px;
+    outline: none;
+    color: rgb(109, 108, 108);
+    padding: 17px;
+    transition: all 0.3s;
+    display: inline;
+}
+
+.section-menu a {
+    text-decoration: none;
+}
+
+.section-menu li a {
+    color: rgb(109, 108, 108);
+}
+
+.section-menu li:hover {
+    opacity: 0.6;
+}
+
+.section-filter p {
+    margin-top: 50px;
+    margin-right: 40px;
+    font-size: 20px;
+    border: 2px solid rgb(235, 234, 234);
+    border-radius: 13px 13px 13px 13px;
+    color: rgb(109, 108, 108);
+    padding: 8px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.section-filter p:hover {
+    opacity: 0.6;
+}
+
+.section-socials li {
+    display: inline;
+    
+}
+
+.section-socials i {
+    text-decoration: none;
+    font-size: 30px;
+    padding: 50px;
+    color: rgb(109, 108, 108);
+    margin-left: 120px;
+}
+
+.down {
+   background-color: rgb(248, 247, 247);
+   display: grid;
+   grid-template-columns: 20% 20% 20% 20% 20%;
+   margin-top: 20px;
+}
+
+.down img {
+   max-width: 200px;
+   margin-top: 20px;
+}
+
+.down-menu {
+    display: grid;
+    list-style-type: none;
+    row-gap: 8px;
+}
+
+.down-menu a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px;
+    color: rgb(109, 108, 108);
+}
+
+.contact-head {
+    width: 250px;
+    margin: 35px auto;
+    border-bottom:3px solid rgb(109, 108, 108);
+  }
+  
+.contact-head h1 {
+    margin-left: 100px;
+    color: rgb(109, 108, 108);
+}
+
+.contact-section h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 2px 0;
+    margin: 0;
+    color: #555555;
+  }
+  
+.contact-section-info {
+    display: grid;
+    grid-template-columns:58% 42%;
+    margin-top: 70px;
+  }
+  
+.contact-info {
+    margin-left: 150px;
+  }
+  
+.contact-info h4 {
+    color: #555555;
+    font-size: 15px;
+  }
+  
+.contact-info p {
+    color: #3c3c3c;
+    padding: 3px;
+  }
+  
+.contact-p {
+    color: #5a5959;
+  }
+  
+.contact-input {
+    margin-top: 14px;
+    height: 450px;
+    display: grid;
+  }
+  
+.contact-inp-name-em input{
+    height: 30px;
+    width: 410px;
+  }
+  
+.contact-textarea textarea {
+    height: 250px;
+    width: 410px
+  }
+  
+.contact-input button {
+    font-size: 30px;
+    color: #e2dfdf;
+    border: none;
+    outline: none;
+    background-color: rgb(109, 108, 108);
+    cursor: pointer;
+  }
+  
+.contact-input button:hover {
+    opacity: 0.7;
+  }
+  
+  
+.cont-soc ul {
+    list-style: none;
+    font-size: 38px;
+    padding: 10px;
+  }
+  
+.cont-soc li {
+    display: inline;
+    margin-left: 75px;
+    
+  }
+  
+.cont-soc li:hover {
+    color: rgb(109, 108, 108);
+    opacity: 0.7;
+  }
+  
+.cont-soc i {
+    color: rgb(109, 108, 108);
+    text-decoration: none;
+  }
+
+.banner2 {
+    border-top: 5px solid rgb(149, 148, 148);
+    border-bottom: 5px solid rgb(149, 148, 148);
+    width: 100%;
+    height: 800px;
+    background: url(./images/about-us-banner.webp) no-repeat;
+    background-size: cover;
+}
+
+.about-fr {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 450px;
+}
+
+.about-fr img {
+    max-width: 550px;
+}
+
+.about-info {
+    margin-left: 170px;
+}
+
+.about-info h1 {
+    font-size: 30px;
+}
+
+.about-info p {
+    font-size: 22px;
+}
+
+.blog-preface {
+    margin-left: 200px;
+    width: 800px;
+}
+
+.blog-preface h1 {
+    font-size: 50px;
+}
+
+.date p{
+    font-size: 16px;
+    color: #727272;
+}
+
+.blog-preface img {
+    max-width: 750px;
+}
+
+.prosto-p {
+    font-size: 30px;
+    font: bold;
+}
+
+.blog-body {
+    margin-left: 175px;
+    margin-top: 50px;
+    height: 150px;
+}
+
+.blog-body img{
+    max-width: 220px;
+}
+
+.blog-body h3 {
+    font-size: 18px;
+}
+
+.blog-section hr {
+    max-width: 1110px;
+}
+
+.sec {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 80px;
+    list-style: none;
+    height: 330px;
+    margin-top: 60px;
+}
+
+.categories-name {
+    text-align: center;
+    font-size: 35px;
+    color: #555555;
+}
+
+.section-cart img {
+    max-width: 250px;
+    border-radius: 18px 18px 18px 18px;
+    transition: all 0.5s;
+}
+
+.section-cart img:hover {
+    transform: scale(1.1);
+}
+
+.cart-menu {
+    padding: 8px;
+    margin-left: 9px;
+}
+
+.cart-menu i {
+    margin-left: 20px;
+}

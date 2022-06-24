@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Animation</title>
+    <link rel="stylesheet" href="/media/style.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div>
+            <a href=".">
+                <img src="/media/images/Dribbble_logo.png">
+            </a>
+        </div>   
+
+            <nav class="header-menu">
+                <ul class="menu-all">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </nav>
+
+            <nav class="menu-reg">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a href="#">Sign in</a></li>
+                    <li><a href="#">Share my work</a></li>                 
+                </ul>
+            </nav>
+
+    </header>
+
+    <div class="banner"></div>
+    
+    <section>
+
+        <div class="section-categories">
+            <div class="section-select">
+            <select>
+                    <option selected>Popular</option>
+                    <option>Last</option>
+                    <option>Trend</option>
+                </select>
+            </div>
+
+
+            <nav class="section-menu">
+                <ul>
+                    <li><a href="all">All</a></li>
+                    <li><a href="animation">Animation</a></li>
+                    <li><a href="mobile">Mobile</a></li>
+                    <li><a href="print">Print</a></li>
+                    <li><a href="brand">Brand</a></li>
+                </ul>
+            </nav>
+
+            <div class="section-filter">
+                <p>Filters</p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <div class="categories-name">
+        <h3>Animation</h3>
+    </div>
+
+    <hr>
+        <section class="sec">
+            {% for a in all %}
+            <section class="section-cart">
+                
+                <div>
+                    <img src="/media/images/animation.gif">
+                        <div class="cart-menu">
+                                <i class="fa-solid fa-user">{{a.account_name}}</i>
+                                <i class="fa-solid fa-heart"></i>{{a.likes}}
+                                <i class="fa-solid fa-eye"></i>{{a.view}}
+                        </div>          
+                </div>
+                
+            </section>
+            {% endfor %}
+
+        </section>
+
+        <div class="down">
+            <div class="down-logo">
+                <img src="/media/images/Dribbble_logo.png">
+            </div>
+
+        <div>
+            <ul class="down-menu">
+                <h4>For designers</h4>
+                <li><a href="#">Go Pro!</a></li>
+                <li><a href="#">Explore design work</a></li>
+                <li><a href="#">Design blog</a></li>
+                <li><a href="#">Overtime podcast</a></li>
+                <li><a href="#">Dribbble meetups</a></li>
+                <li><a href="#">Playoffs</a></li>
+                <li><a href="#">Code of conduct</a></li> 
+            </ul>
+        </div>
+
+        <div>
+            <ul class="down-menu">
+                <h4>Hire designers</h4>
+                <li><a href="#">Post a job opening</a></li>
+                <li><a href="#">Post a freelance</a></li>
+                <li><a href="#">Search for designers</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <ul class="down-menu">
+                <h4>Company</h4>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Media kit</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Terms of service</a></li> 
+            </ul>
+        </div>
+
+        <div>
+            <ul class="down-menu">
+                <h4>Directories</h4>
+                <li><a href="#">Design jobs</a></li>
+                <li><a href="#">Designers for hire</a></li>
+                <li><a href="#">Freelance designers</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Places</a></li>
+            </ul>
+        </div>
+
+
+</body>
+</html>
